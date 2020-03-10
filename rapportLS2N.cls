@@ -62,8 +62,8 @@
 %\foreach \equipe in \listeEquipes {
 %	\addbibresource{equipes/\equipe/annexes/\MakeLowercase{\equipe}.bib}
 %}
-\addbibresource{equipes/SLP/annexes/slp.bib}
-\addbibresource{equipes/SLP/annexes/20152016_slp.bib}
+\addbibresource{equipes/SLP/annexes/SLP.bib}
+%\addbibresource{equipes/SLP/annexes/20152016_slp.bib}
 
 \DeclareFieldFormat*{title}{\textit{\textbf{#1}}} % titre publication en gras
 
