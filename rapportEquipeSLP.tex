@@ -1,0 +1,42 @@
+\documentclass[]{rapportLS2N}
+
+\newcommand{\whoami}{SLP}
+\newcommand{\whoamiminuscule}{slp}
+
+% changer à false pour ne pas générer les commentaires dans le pdf 
+\setboolean{comment}{true}  
+
+
+\begin{document}
+\sloppy
+\input{pageDeGarde}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{fancy}
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\part{Équipe \whoami}
+
+%==============================================================================%
+\include{./equipes/\whoami/bilan}
+\include{./equipes/\whoami/projet}
+
+
+\chapter{Annexe 4}
+
+partie mise en place prochainement
+%\input{./annexes/annexe04}
+
+\include{publis}
+
+
+
+
+
+
+\end{document}
+

@@ -1,0 +1,241 @@
+\renewcommand{\nomequipe}{SLP}
+
+\chapter{Équipe \nomequipe}
+
+ \section{Présentation de l'équipe}
+ 
+  	\subsection{Historique, localisation de l'équipe}
+  
+  		   %%%% ne pas supprimer les commentaires ; si vous désirez un pdf sans les commentaires mettre false à la place de true dans \setboolean{comment}{true} en debut de fichier rapportEquipe.tex à la racine du dossier HCERES   %%%%%
+		   
+  	
+  \CommentairesDirection {
+  Rappel de l'historique IRCCyN et/ou LINA pour les équipes créées en 2017. 
+  Cas particulier des équipes créées en cours de mandat : expliquer notamment la reprise de l'héritage en ce qui concerne les
+  indicateurs. Présenter la localisation de l'équipe (et la répartition pour les équipes multi-sites). 
+}
+
+  
+  	\subsection{Effectifs}
+  	
+   \CommentairesDirection{
+  Le tableau des permanents sera automatiquement généré. Il contient les colonnes suivantes : Nom, prénom, statut, employeur, HdR, section CNU ou CoNRS ou ? \\
+  pour IMT-A. Un renvoi sera possible pour indiquer du temps partiel ou du partage entre équipes. A la suite de ce tableau, dans un texte libre, l'équipe devra indiquer la taille
+  de l'équipe en indiquant le nombre de non-permanents (en juin 2020) en distinguant doctorants, post-doctorants, ingénieurs, invités, collaborateurs... : ce devra être conforme aux données RH demandées. \\ 
+  Les évolutions ou non des effectifs au cours de la  période devront être présentées. 
+}
+  
+ 
+		  %%%% tableau généré par le fichier csv dans /equipes/equipe/donnees/personnelPermamentequipe.csv %%%%%
+		   %%%% ne rien modifier %%%%%
+		   
+			  \DTLloaddb{persPerm\nomequipe}{./equipes/\nomequipe/donnees/personnelPermament\nomequipe.csv}
+			%\restylefloat{table}
+			\begin{table}[H]
+			\begin{TableauSix}{Personnels permanents}
+			\toprule
+			\bfseries Nom &
+			\bfseries Prénom &
+			\bfseries Statut &
+			\bfseries Employeur &
+			\bfseries HDR &
+			\bfseries Section CNU/CoNRS
+			\DTLforeach*{persPerm\nomequipe}{\nom=Nom,\Prenom=Prenom,\Statut=Statut,\Employeur=Employeur,\HDR=HDR,\CNU=CNU}
+			{
+				\\\DTLifoddrow{\rowcolor{tcC}}{\rowcolor{tcB}}
+				\nom & \Prenom & \Statut & \Employeur & \HDR & \CNU
+			} % end of loop1
+			\end{TableauSix}
+			\end{table} 
+		   
+		   %%%% fin insertion automatique données tableau %%%%%
+		   
+
+  	\subsection{Politique scientifique}
+  
+   \CommentairesDirection{
+  Ce paragraphe rassemble les éléments de politique et de positionnement au sein de l'écosystème de l'équipe (local, national ou international). On imagine le rappel des enjeux et défis abordés, le
+  type de profil de l'équipe (incluant recherche amont, expérimentale,  valorisation). Les différents axes de l'équipe peuvent être  présentés. \\
+  Ne pas oublier la prise en compte (ou non) des recommandations de la dernière évaluation. 
+}
+
+   
+  \vfill
+\rule[\baselineskip]{0pt}{\baselineskip}
+ \section{Produits et activités de recherche}
+ 	
+\subsection{Bilan scientifique}
+  		
+  FL: Ici réaliser un bilan par axe 
+  
+  Test citation: \cite{zhu:hal-01977572}.
+  Remarque: pas d'année ???
+  
+\subsubsection{Maîtrise des Risques pour les Systèmes Industriels et les Services}
+
+Dans cette axe, nous nous sommes tout d'abord intéressés a des
+développements et à l'évaluation de méthodes de surveillance
+(monitoring):
+\begin{itemize}
+\item pour des \emph{statistiques non usuelles} comme le coefficient
+  de variation (\cite{yeong:hal-01716541},
+  \cite{amdouni:hal-01573597}, \cite{you:hal-01351488},
+  \cite{teoh:hal-01381673}, \cite{amdouni:hal-01388503},
+  \cite{castagliola:hal-01083082}, \cite{castagliola:hal-01202423},
+  \cite{amdouni:hal-01202424}) avec notamment les thèses de A. Achouri
+  et A. Amdouni et son extension multivariée
+  (\cite{khatun:hal-02072237}, \cite{nguyen:hal-01885435},
+  \cite{ginerbosch:hal-02283481}, \cite{khaw:hal-01895172},
+  \cite{yeong:hal-01307037}), le ratio de deux variables qualité
+  normales (\cite{tran:hal-01773342}, \cite{celano:hal-01264243},
+  \cite{celano:hal-01272650}, \cite{tran:hal-01308072},
+  \cite{tran:hal-01345854}, \cite{tran:hal-01396009}) avec la thèse de
+  K.P. Tran et son extension à $p$ variables via la notion de données
+  compositionnelles (\cite{zaidi:hal-02273060},
+  \cite{tran:hal-01731361}) avec la thèse de F. Zaidi.
+\item pour des \emph{données de type fiabilité}
+  (\cite{haghighi:hal-02183425}, \cite{castagliola:hal-01204508},
+  \cite{haghighi:hal-01264248}) ou de type \emph{temps entre
+    évènements et amplitudes} (\cite{rahali:hal-02135093},
+  \cite{qu:hal-01809531}, \cite{qu:hal-01895010}) avec la thèse de
+  D. Rahali.
+\item pour des \emph{données de type discrète} comme Zero Inflated
+  Poisson, Zero Inflated Binomial, Geometrically Inflated Poisson,
+  avec ou sans autocorrelation (\cite{rakitzis:hal-01718089},
+  \cite{rakitzis:hal-01466793}, \cite{rakitzis:hal-01659129},
+  \cite{bersimis:hal-01676808}, \cite{rakitzis:hal-01231367},
+  \cite{rakitzis:hal-01331381}, \cite{rakitzis:hal-01345886},
+  \cite{rakitzis:hal-01345887}, \cite{rakitzis:hal-01166916}) avec les
+  travaux du post-doctorant A. Rakitzis
+\item pour des \emph{données auto-corrélées}
+  (\cite{garzavenegas:hal-01824643}, \cite{franco:hal-01169579}) avec
+  les travail du doctorant invité J.A. Garza Venegas,
+\item pour des \emph{données de type profil}, dont la variable
+  explicative dépend d'une ou plusieurs variables externes,
+  (\cite{maleki:hal-02183432}, \cite{maleki:hal-01870773},
+  \cite{maleki:hal-01905445}, \cite{guevara:hal-01580777}) avec
+  notamment les travaux du doctorant invité R. Maleki.
+\item pour des \emph{procédés à horizon de production fini}
+  nécessitant la définition d'indicateurs de performance spécifiques
+  (\cite{chong:hal-01978750}, \cite{celano:hal-01921379},
+  \cite{celano:hal-01921386}, \cite{nenes:hal-01425549},
+  \cite{celano:hal-01313577}, \cite{celano:hal-01367280},
+  \cite{celano:hal-01382239}),
+\end{itemize}
+
+Nous nous sommes aussi intéressés à évaluer les performances de
+méthodes de surveillance statistique de procédés dans le cas où:
+\begin{itemize}
+\item les paramètres nominaux (sous-contrôle) ont été \emph{estimés}
+  et ne sont donc pas exactement connus (\cite{chong:hal-01978769},
+  \cite{tang:hal-02015138}, \cite{tang:hal-02145998},
+  \cite{hu:hal-02155302}, \cite{hu:hal-02160997},
+  \cite{castagliola:hal-02190734}, \cite{hu:hal-02318364},
+  \cite{khoo:hal-02354567}, \cite{hu:hal-01835841},
+  \cite{oprime:hal-01421764}, \cite{you:hal-01614074},
+  \cite{teoh:hal-01583912}, \cite{hu:hal-01668745},
+  \cite{wu:hal-01286478}, \cite{teoh:hal-01326056},
+  \cite{castagliola:hal-01349529}, \cite{yeong:hal-01180304},
+  \cite{teoh:hal-01185340}, \cite{you:hal-01216234},
+  \cite{you:hal-01348052}) avec les travaux des doctorants invités
+  X. Hu et A.A. Tang,
+\item une \emph{erreur de mesure} non négligeable doit être prise en
+  compte (\cite{sabahno:hal-01977765}, \cite{tang:hal-01978754},
+  \cite{sabahno:hal-02190729}, \cite{tang:hal-01806538},
+  \cite{sabahno:hal-01921390}, \cite{maleki:hal-01423386},
+  \cite{tran:hal-01668732}, \cite{hu:hal-01307056},
+  \cite{hu:hal-01327313}, \cite{hu:hal-01396018},
+  \cite{hu:hal-01228430}), avec la contribution des doctorants invités
+  A. Maleki et H. Sabahno,
+\item le calcul des propriétés associés au Run Length doivent être
+  calculé de manière exacte, sans approximation ou méthodes de
+  simulation (\cite{castagliola:hal-02002980},
+  \cite{maravelakis:hal-02022526}, \cite{tang:hal-02059892},
+  \cite{khoo:hal-01354062}). Il faut noter que
+  \cite{castagliola:hal-02002980} est le second article publié dans la
+  revue Journal of Quality Technology par l'auteur principal et qu'il
+  est le seul auteur français à avoir réussi à publier deux articles
+  dans cette revue très sélective.
+\end{itemize}
+
+Finalement, nous avons contribué à résoudre des problématiques de
+dégradation et de maintenance en grandes dimensions appliquées, en
+particulier, à des infrastructures du génie civil et utilisant, entre
+autre, des méthodes de type Réseaux Bayésiens (RB). Nous nous sommes
+plus particulièrement intéressés à:
+\begin{itemize}
+\item la modélisation pure du phénomène de détérioration et de
+  l'aspect cyclique de la phase de maintenance
+  (\cite{kosgodagan:hal-01517154}) et la proposition d'un modèle de RB
+  dynamique afin de fournir des stratégies de coûts optimisés dans le
+  contexte de la gestion de réseaux de ponts routiers
+  (\cite{kosgodagandallatorre:hal-01517168}).
+\item une extension du RB dynamique standard en introduisant une
+  dimension supplémentaire qui prend en compte des ``éléments''
+  spatiaux qui sont ainsi liés par un ensemble de covariables qui
+  traduisent les dépendances probabilistes existantes
+  (\cite{kosgodagan:hal-01517174}). Ce point et le précédent
+  correspondent aux travaux de thèse d'A. Kosgodagan.
+\item une approche basée sur les RB discrets pour quantifier les
+  probabilités de transition de l'état du système
+  (\cite{acharige:hal-01152564}),
+\item la proposition d'un premier modèle qui considère l'option ou la
+  possibilité d'acquérir une information sur la rentabilité de
+  nouvelle technologie pas encore disponible sur le marché pour la
+  prise de décision de maintenance et remplacement des biens
+  (\cite{nguyen:hal-01520843}) avec la thèse de T.P.K. Nguyen,
+\item une méthodologie pour la formulation et la construction d'un
+  méta-modèle qui intègre des données issues des mesures de contrôle
+  non destructif et de l'évolution de la pathologie de dégradation
+  choisie (\cite{elhajj:hal-01520822}, \cite{elhajj:hal-01316236})
+  avec la thèse de B. El Hajj.
+\end{itemize}
+
+  \subsubsection{Axe Conception, planification et ordonnancement des systèmes de production et de services}
+  
+L’équipe SLP mène également des recherches dans le domaine de l’équilibrage robuste optimal de lignes de production avec des tâches de durée variable, dites incertaines. 
+
+Il s’agit principalement, d’une part, de lignes d’assemblage classiques et, d’autre part, de lignes de transfert où les tâches s'exécutent en parallèle au sein des blocs qui sont, quant à eux, activés de manière séquentielle. La notion de robustesse utilisée se base sur l'indicateur, connu sous le nom de rayon de stabilité. Pour une ligne de production donnée, cet indicateur est calculé comme l’amplitude maximale de variations de la durée des tâches incertaines sans remettre en cause l’admissibilité de la ligne. 
+Tout en tenant compte de différentes contraintes technologiques, le but principal est donc de concevoir une ligne de production ayant la valeur du rayon de stabilité la plus élevée possible.  
+
+Les résultats obtenus portent essentiellement sur le développement de méthodes de résolution exactes efficaces à l’aide de la programmation linéaire en nombres mixtes (PLNM) \cite{rossi:hal-01301625}, basées sur la génération de coupes optimums, la réduction de l’espace de recherche grâce à des inégalités valides \cite{pirogov:hal-01614455,pirogov:hal-01713722,pirogov:hal-01832920} ou bien sur la décomposition de Dantzig-Wolf pour de nouvelles variantes du problème de bin-packing qui en découlent \cite{schepler:hal-01474542,schepler:hal-01518356,schepler:hal-02485676}.  
+
+Une thèse de doctorat \cite{pirogov:tel-02418792} a été également soutenue en 2019 sur ce sujet au sein de l’équipe.
+  
+
+  \subsubsection{Axe Conception et optimisation des réseaux logistiques et de transport}
+  		
+  \subsubsection{Axe Thèmes transversaux et fondamentaux}
+  
+L'axe 4 regroupe les travaux de l'équipe avec une coloration plutôt académique portant essentiellement, d'une part, sur l'étude de complexité algorithmique pour des problèmes classiques (ou leurs variantes) en optimisation combinatoire et, d'autre part, sur le développement de méthodes exactes en optimisation multi-objectif.      
+
+\begin{enumerate}
+    \item L’équipe a conduit une étude de complexité algorithmique pour des problèmes d'optimisation combinatoire avec données contrôlables et fonctions de risque linéaires (min-sum) et non-linéaires (min-max). Ses problèmes d’optimisation retrouvent des applications en routage et conception du réseau. Pour tous les problèmes traités, nous avons développé des algorithmes polynomiaux et pseudo-polynomiaux plus efficaces \cite{gurevsky:hal-01262639,gurevsky:hal-01272518,gurevsky:hal-01341259,gurevsky:hal-01518346}, en termes de l'ordre de grandeur, par rapport à ceux proposés auparavant dans la littérature. 
+    
+    \item L’activité sur le thème « optimisation multi-objectif » sur la période 2015-2019 a été naturellement rythmée par le projet ANR-DFG vOpt (Exact Efficient Solution of Mixed Integer Programming Problems with Multiple Objective Functions).
+
+
+La principale méthodologie considérée dans ce projet pour la résolution exacte de problèmes d’optimisation multi-objectif a été le branch and bound multi-objectif. Un état de l’art détaillé au sujet de ce type de méthode \cite{przybylski:hal-01717951} et ensuite, des travaux raffinant chacun de ses composants ont été réalisés : ensembles bornants, choix de la variable de branchement, choix du noeud actif. 
+
+%Une étude du lien entre l’enveloppe convexe d’un ensemble de points et la décomposition de l’ensemble des poids a permis d’identifier des conditions pour lesquelles des facettes définies par des points non-dominés supportés sont dominées. Ensuite, une méthode s’appuyant sur le calcul incrémental d’un ensemble de points non-dominés supportés, et se reposant fortement sur une initialisation appropriée dans le but d’éviter la considération de facettes dominées, a été proposée [2]. Une nouvelle méthode pour la résolution de la relaxation convexe passant par une décomposition de l’ensemble des poids a également été proposée [3].
+
+Une première méthode pour calculer l’ensemble bornant optimal convexe surrogate a été proposée dans \cite{cerqueus:hal-01158355} et repose sur une décomposition de l’ensemble des multiplicateurs. Une nouvelle méthode \cite{przybylski:hal-02480174} a été proposée en réalisant une méthode d’analyse de sensibilité pour le problème dual-surrogate mono-objectif. Cet ensemble bornant supérieur est un outil puissant pour pré-traiter le problème du sac à dos bi-objectif bi-dimensionnel.
+
+Le choix de la variable de branchement a été étudié pour le cas spécifique du sac à dos bi-objectif en variables binaires \cite{cerqueus:hal-01564982}. Le choix du noeud actif a été considéré avec une stratégie originale pour le problème de localisation de services bi-objectif \cite{delmee:hal-01435524} (avec et sans contrainte de capacité). Une autre méthode a  été également proposée pour la résolution exacte du problème avec contrainte de capacité : une méthode en deux phases pour laquelle la seconde phase se repose sur un algorithme de branch and bound \cite{delmee:hal-02480176}. 
+\end{enumerate}
+	
+
+
+
+
+
+
+
+  		
+\subsection{Faits marquants}
+
+   FL : Chaque Axe propose quelques faits marquants 
+
+\section{Vie de l'équipe}
+
+	

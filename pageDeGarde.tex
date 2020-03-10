@@ -1,0 +1,126 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN TITLE PAGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage} 
+\thispagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{\hbox to \hsize{%
+       \hbox{\vtop{\vskip 0pt \hbox{\includegraphics[height=3cm]{./images/hceres.png}}}}%
+       \hfill\hbox{\vtop{\vskip 1.5cm \hbox{\hskip -8.5cm \color{red} \selectfont Département d'évaluation de la recherche}}}}}
+
+\fancyfoot[LO,LE]{\color{violet} \fontsize{7}{20} \selectfont Campagne d'évaluation  2020-2021 --- Vague B}
+\fancyfoot[RO,RE]{\color{violet} \fontsize{7}{20} \selectfont \mydateformat\today}
+\fancyfoot[C]{ }
+
+ \vspace*{1cm}
+
+\centering 
+ \color{violet} \fontsize{15}{15} \selectfont  
+   \fcolorbox{rouge}{blanc}{\parbox{0.7\textwidth}{\begin{center} LS2N
+         UMR6004\\ \vskip 11pt
+     Dossier d'auto-évaluation     \end{center} }} 
+    \vspace{1cm} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \flushleft{ \color{rouge} \fontsize{10}{10} \selectfont \textbf{\noindent CAMPAGNE D'ÉVALUATION 2020-2021} \\ VAGUE B}\\
+     \vspace{1.5cm} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \flushleft{ \color{rouge} \fontsize{12}{10} \selectfont \textbf{\noindent INFORMATIONS GÉNÉRALES\\}}
+     \vspace{0.8cm} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fboxsep=10pt
+ \fcolorbox{rouge}{blanc}{\parbox{\textwidth}{
+  \color{violet}\fontsize{9}{9} \selectfont 
+  \textbf{Nom de l'unité : }Laboratoire des Sciences du Numérique de Nantes.	\\			
+  \textbf{Acronyme : }LS2N.	\\			
+   \textbf{Domaine et sous-domaine dans la nomenclature du Hcéres :  }ST/ST6.	\\
+   \vskip 11pt
+    \textbf{Directeur pour le contrat en cours : }Claude JARD.\\				
+     \textbf{Directeur.rice (ou du porteur de projet) pour le contrat à venir : } XX (proposé aux tutelles).  
+}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+\vskip 0.8cm
+\color{violet} \fontsize{9}{9} \selectfont \textbf{\noindent Type de demande : }  
+\vskip 0.3cm
+{\fcolorbox{rouge}{blanc}{
+        \parbox{\textwidth}{
+                \fontsize{9}{9} 
+                \selectfont 
+                \begin{tabular}{p{5cm}p{3cm}p{4cm}}
+                        Renouvellement à l'identique $\boxtimes$ & Restructuration $\Box$ & Création ex-nihilo $\Box$
+                \end{tabular}
+                
+        }
+} 
+}    
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%          Fin de la première page       %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\makeatother
+\fancyfoot[LO,LE]{\color{violet} \fontsize{7}{20} \selectfont Campagne d'évaluation  2020-2021 --- Vague B }
+\fancyfoot[RO,RE]{ \color{violet} \fontsize{7}{20} \selectfont Département de la recherche \quad \quad \quad \thepage}
+\fancyfoot[C]{ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancyhead[L]{\color{violet} \fontsize{8}{20} \selectfont  Dossier d'auto-évaluation des unités de recherche \\}
+\rhead{\includegraphics[height=2cm]{./images/hceres.png}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%                  Deuxième page           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\noindent \color{violet} \fontsize{9}{9} \selectfont \textbf{Établissements et organismes de rattachement : }   \\
+\vskip 0.5cm
+ \noindent 
+   \fboxsep=10pt
+   \fcolorbox{rouge}{blanc}{\parbox{\textwidth}{
+  \color{violet}\fontsize{9}{9} \selectfont 
+  Liste des établissements et organismes tutelles de l'unité de recherche \textbf{pour le contrat en cours et pour le prochain contrat} (tutelles).
+     \vskip 20pt
+ \begin{tabular}{p{7cm}p{7cm}}
+% \begin{tabular}{ll}
+ Contrat en cours : & Prochain contrat : \\
+ \vspace{0.2cm} \\
+ 
+ -- Université de Nantes & -- Université de Nantes \\
+ -- CNRS & -- CNRS \\
+ -- Centrale Nantes & -- Centrale Nantes \\
+ -- IMT Atlantique & -- IMT Atlantique
+  \end{tabular}
+  }} 
+\vskip 20pt
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent \color{violet} \fontsize{9}{9} \selectfont 
+\textbf{Choix de l'évaluation interdisciplinaire de l'unité de recherche (ou d'une ou plusieurs équipes internes) :}   \\
+\vskip 0.5cm
+\noindent \fcolorbox{rouge}{blanc}{
+        \parbox{\textwidth}{
+                \fontsize{9}{9} \selectfont 
+                \vskip 11pt
+                \begin{tabular}{p{2cm}p{6cm}p{6cm}}
+                        & Oui $\Box$  & Non $\boxtimes$
+                \end{tabular}
+                \vskip 11pt
+  }
+}     
+  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%                            Fin de la deuxième page 			 %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%---------8>----------%%%%%%%%%%%%%%%%
+
+
+
+%% on change le style par defaut des hauts et pieds de pages pour avoir les memes partout
+  
+  \patchcmd{\part}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+  \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
