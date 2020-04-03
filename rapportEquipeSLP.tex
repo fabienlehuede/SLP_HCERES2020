@@ -4,8 +4,8 @@
 \newcommand{\whoamiminuscule}{slp}
 
 % changer à false pour ne pas générer les commentaires dans le pdf 
-\setboolean{comment}{true}  
-
+\setboolean{comment}{false}  
+ 
 
 \begin{document}
 \sloppy
@@ -17,19 +17,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-\part{Équipe \whoami}
+%\part{Équipe \whoami}
 
 %==============================================================================%
 \include{./equipes/\whoami/bilan}
 \include{./equipes/\whoami/projet}
 
 
-\chapter{Annexe 4}
-
-partie mise en place prochainement
-%\input{./annexes/annexe04}
+\section{Annexe}
+\input{./equipes/\whoami/annexe}
 
 \include{publis}
 

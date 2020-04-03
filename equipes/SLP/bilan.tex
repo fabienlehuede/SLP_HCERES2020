@@ -4,6 +4,11 @@
 
  \section{Présentation de l'équipe}
  
+ L'équipe SLP conçoit des modèles et algorithmes d'optimisation et aide à la décision pour la résolution de problèmes complexes. 
+ Elle inscrit sa recherche dans les domaines de la recherche opérationnelle et de la décision dans l'incertain. 
+ 
+
+ 
   	\subsection{Historique, localisation de l'équipe}
   
   		   %%%% ne pas supprimer les commentaires ; si vous désirez un pdf sans les commentaires mettre false à la place de true dans \setboolean{comment}{true} en debut de fichier rapportEquipe.tex à la racine du dossier HCERES   %%%%%
@@ -14,8 +19,13 @@
   Cas particulier des équipes créées en cours de mandat : expliquer notamment la reprise de l'héritage en ce qui concerne les
   indicateurs. Présenter la localisation de l'équipe (et la répartition pour les équipes multi-sites). 
 }
+L'équipe SLP a été fondée à la création de l'IRCCyN en 2000.
+Elle comporte 15 permanents, dont 8 à IMT Atlantique et 7 à l'Université de Nantes, répartis sur les sites de la FST à Nantes et des IUT à Carquefou et Saint Nazaire.
+Elle accueille également un membre externe, professeur associé à Rennes School of Business. 
 
-  
+L'équipe est dirigée par Fabien Lehuédé (responsable d'équipe) et Evgeny Gurevsky (adjoint). 
+
+
   	\subsection{Effectifs}
   	
    \CommentairesDirection{
@@ -51,6 +61,9 @@
 		   %%%% fin insertion automatique données tableau %%%%%
 		   
 
+
+
+
   	\subsection{Politique scientifique}
   
    \CommentairesDirection{
@@ -59,18 +72,16 @@
   Ne pas oublier la prise en compte (ou non) des recommandations de la dernière évaluation. 
 }
 
+
    
   \vfill
 \rule[\baselineskip]{0pt}{\baselineskip}
  \section{Produits et activités de recherche}
  	
 \subsection{Bilan scientifique}
-  		
-  FL: Ici réaliser un bilan par axe 
-  
-  Test citation: \cite{zhu:hal-01977572}.
-  Remarque: pas d'année ???
-  
+
+Le bilan scientifique est présenté selon les quatre axes de recherche de l'équipe. 		
+
 \subsubsection{Maîtrise des Risques pour les Systèmes Industriels et les Services}
 
 Dans cette axe, nous nous sommes tout d'abord intéressés a des
@@ -199,51 +210,45 @@ Concernant l’ordonnancement, les travaux menés se sont focalisés sur la dét
 
 Pour la planification de production, les travaux se sont majoritairement concentrés sur deux directions : la planification sous incertitude et la planification financière. La première consiste à définir les quantités à produire ou à commander afin de pouvoir satisfaire la demande en produit fini pour minimiser les coûts logistiques alors que des paramètres tels que la demande, la capacité et le lead time sont incertains. Des modèles mathématiques stochastiques et des méthodes de résolutions efficaces ont été développées pour y répondre \cite{benammar:hal-02415341,benammar:hal-02435962,benammar:hal-01961194,BENAMMAR201839,Thevenin2020,borodin:hal-01313213}. La thématique de la planification financière a été abordée lors du projet FUI RCSM et trouve sa continuation dans le cadre du projet ANR FILEAS FOG mené conjointement avec l’IGR-IAE de Rennes. Le but de cette recherche est d'étudier l’impact des décisions financières sur les décisions de planification de la production, et, plus généralement, les décisions logistiques.  Cette recherche a donné lieu à une première thèse de doctorat soutenue par Yuan Bian \cite{bian:hal-02190123,bian:halshs-01683781} et une seconde a débuté en 2018.  Des travaux sur l’intégration de décisions sont également menés : on peut citer par exemple l’intégration de la planification de la production avec les décisions d’inspection \cite{bettayeb:hal-01689377} et la problématique d’intégration des décisions de planification et d’ordonnancement qui ont donné lieu au démarrage d’une thèse CIFRE conjointement avec la société VIF. Outre cela, on peut citer également le développement d’outils de conception/planification et ordonnancement sous incertitudes basées sur des méthodes de programmation stochastique ou robuste, ou encore la résolution du problème de planification intégrée de stock de produit vrac, de routage et d’ordonnancement d’accostage des navires dans un port de vrac dans le cadre d'une collaboration avec l’Université UM6P de Benguerir au Maroc \cite{Najid2020}. \\
 
-La recherche sur la conception combinatoire des systèmes de production reconfigurables est un autre sujet de recherche développé dans l’axe. En se basant sur des résultats obtenus précédemment pour la conception optimale des lignes de transfert pour la fabrication de grandes séries, des modèles et techniques d'optimisation permettant de choisir des équipements et de configurer optimalement des lignes de production reconfigurables pouvant fabriquer plusieurs types de produits ont été développés \cite{Battaia2020,battaia:hal-01435089,battaia:hal-01523726,Dolgui2019,Dolgui2020, yelleschaouche:hal-02485673}. \\
+La recherche sur la conception combinatoire des systèmes de production reconfigurables est un autre sujet de recherche développé dans l’axe. En se basant sur des résultats obtenus précédemment pour la conception optimale des lignes de transfert pour la fabrication de grandes séries, des modèles et techniques d'optimisation permettant de choisir des équipements et de configurer optimalement des lignes de production reconfigurables pouvant fabriquer plusieurs types de produits ont été développés \cite{Battaia2020,battaia:hal-01435089,battaia:hal-01523726,Dolgui2019,Dolgui2020, Yelles-Chaouche2020}. \\
 
-Enfin, la dernière thématique concerne l’équilibrage des lignes de production. Celle-ci a été étudiée dans un cas déterministe, en tenant compte des variations de charge induites par les changements de demande, d’un portefeuille multi-produit etc. Des études portant sur la complexité algorithmique de variantes de cette problématique ont été menées et des algorithmes efficaces ont été développés \cite{delorme:emse-01840007,dolgui:hal-01688688}. Cette problématique a également été abordée sous l’angle de la robustesse en utilisant un indicateur appelé « rayon de stabilité » que l’on cherche à maximiser. Les résultats obtenus portent essentiellement sur le développement de méthodes de résolution exactes efficaces à l’aide de la programmation linéaire en nombres mixtes (PLNM) \cite{rossi:hal-01301625}, basée sur la génération de coupes optimums, la réduction de l’espace de recherche grâce à des inégalités valides \cite{pirogov:hal-01832920,pirogov:hal-01713722, pirogov:hal-01614455} ou bien sur la décomposition de Dantzig-Wolf pour de nouvelles variantes du problème de bin-packing qui en découlent \cite{schepler:hal-01518356,schepler:hal-02485676, schepler:hal-01474542}. Une thèse de doctorat a été également soutenu en 2019 sur ce sujet \cite{pirogov:tel-02418792}.
+Enfin, la dernière thématique concerne l’équilibrage des lignes de production. Celle-ci a été étudiée dans un cas déterministe, en tenant compte des variations de charge induites par les changements de demande, d’un portefeuille multi-produit etc. Des études portant sur la complexité algorithmique de variantes de cette problématique ont été menées et des algorithmes efficaces ont été développés \cite{delorme:emse-01840007,dolgui:hal-01688688}. Cette problématique a également été abordée sous l’angle de la robustesse en utilisant un indicateur appelé « rayon de stabilité » que l’on cherche à maximiser. Les résultats obtenus portent essentiellement sur le développement de méthodes de résolution exactes efficaces à l’aide de la programmation linéaire en nombres mixtes (PLNM) \cite{Rossi2016}, basée sur la génération de coupes optimums, la réduction de l’espace de recherche grâce à des inégalités valides \cite{Pirogov2017,Pirogov2018a,Pirogov2018b} ou bien sur la décomposition de Dantzig-Wolf pour de nouvelles variantes du problème de bin-packing qui en découlent \cite{Schpler2017a,Schpler2017b,Schpler2020}. Une thèse de doctorat a été également soutenu en 2019 sur ce sujet \cite{Pirogov2019}.
   
 
   \subsubsection{Axe Conception et optimisation des réseaux logistiques et de transport}
   		
    
-Le troisième axe de l'équipe SLP porte sur le développement de modèles et algorithmes d'optimisation pour la conception de réseaux logistiques et la résolution de problèmes de trounées de véhicules (VRP: Vehicle Routing Problem).
+Le troisième axe de l'équipe SLP porte sur le développement de modèles et algorithmes d'optimisation pour la conception de réseaux logistiques et la résolution de problèmes de tournées de véhicules (VRP: Vehicle Routing Problem).\\
 
 Sur le plan scientifique, l'équipe a obtenu des résultats sur les problématiques suivantes : 
 \begin{itemize}
-	\item Sur les \textit{tournées de véhicules avec synchronisation}, l'équipe a réalisé de fortes avancées sur le développement de la méta-heuristique Large Neighborhood Search (LNS), de procédures de réalisabilité efficaces et sur l'hybridation de LNS avec des approches exactes. Ainsi, en collaboration avec le CIRRELT de Montréal, l'équipe a proposé le premier algorithme intégrant des fenêtre de temps dans le problème de tournées de véhicules (VRP) à deux échelons \cite{grangier2015}. La notion de capacité des points de transfert a été introduite dans le VRP avec cross-docking \cite{gangier206,grangier2019} et dans la planification de transports en camion pleins pour les cas de capacité un \cite{grimaultCOR,grimaultThese}. Ces algorithmes ont été appliqué au transport mixte et multi-modal \cite{masson2017}. 
-	ici : thèses HDR projets ?
-	\item Pour la conception de réseaux logistiques, l'équipe a réalisé des avancées sur deux principaux aspects: Tout d'abord, l'intégration de critères de développement durables dans la conception de la supply chain, avec un état de l'art \cite{eskandarpour2015}, ...
-    En parallèle, l'équipe développe son expertise sur la conception de réseaux de transports mutualisés adaptés au secteur de l'horticulture \cite{xintang} avec le FUI Vegesupply, ou de l'approvisionnement des plate-formes de la grande distribution \cite{medina:hal-01689718,...}, à travers la thèse de Juliette Medina, le PIA ADEME OPEN Network, la thèse de Gauthier Soleilhac (préciser les aspects scientifiques). 
-    \item Plus généralement, l'équipe contribue à la résolution de problématiques de transport pour l'industrie et les service: sur le transport de personnes à mobilité réduite, de nouveaux algorithmes ont été proposés pour l'optimisation de tournées avec véhicules reconfigurables \cite{tellez:2019} et la construction de plans de transports réguliers \cite{tellezcondarp}.
-    La collecte de déchets a été abordée dans la thèse CIFRE de Quentin Tonneau en collaboration avec l'entreprise Brangeon. 
-    L'intégration de priorités est étudiée dans le cadre de la thèse de Tan Doan en collaboration avec l'université de Hannoï. 
+	\item Sur les \textit{tournées de véhicules avec synchronisation}, l'équipe a réalisé de fortes avancées sur le développement de la méta-heuristique Large Neighborhood Search (LNS), de procédures de réalisabilité efficaces et sur l'hybridation de LNS avec des approches exactes. Ainsi, en collaboration avec le CIRRELT de Montréal, l'équipe a proposé le premier algorithme intégrant des fenêtre de temps dans le problème de tournées de véhicules (VRP) à deux échelons \cite{grangier2015}. La notion de capacité des points de transfert a été introduite dans le VRP avec cross-docking \cite{grangier:hal-01499170,grangier:hal-02277261} et dans la planification de transports en camion pleins pour les cas de capacité un \cite{grimault:hal-01543503,grimault:tel-01343199}. Ces algorithmes ont été appliqué au transport mixte et multi-modal \cite{masson:hal-01068305}.
+	Ces travaux ont contribué à la soutenance d'une HDR \cite{lehuede:tel-01441778} et ont permis l'obtention de l'ANR PRCI OPUSS. Les premières contribution ont porté sur l'intégration de points et créneaux de livraisons multiples, consignes et préférences  \cite{dumez:hal-02452252}.
+	\item Pour la \textit{conception de réseaux logistiques}, l'équipe a réalisé des avancées sur deux principaux aspects: Tout d'abord, l'intégration de critères de développement durables dans la \textit{conception de la supply-chain}, avec un état de l'art orienté optimisation \cite{eskandarpour:hal-01154605} ainsi que la proposition de méta-heuristiques LNS pour la résolution de problèmes mono et multi-objectifs \cite{eskandarpour:hal-01433630, eskandarpour:hal-02407741}.
+	L'axe apporte son expertise en conception de la supply-chain dans l'ANR FILEAS FOG à travers l'encadrement de la thèse d'Hamidreza Rezaei, qui s'intéresse à la prise en compte de critères financiers.
+
+    En parallèle, l'équipe développe son expertise sur la \textit{conception de réseaux de transports mutualisés}. Ces travaux ont été initiés pour le secteur de l'horticulture \cite{tang:hal-01591618} avec le FUI Vegesupply. Ils ont été étendus à l'approvisionnement des plate-formes de la grande distribution, à travers la thèse de Juliette Medina \cite{medina:tel-01460708} et en collaboration avec l'université Loyola Chicago \cite{medina:hal-01689718}, le PIA ADEME OPEN Network. Ces travaux sont réalisés en partenariat avec l'entreprise 4S-Network et sa filiale CRC Services. Ils continuent avec la thèse CIFRE de Gauthier Soleilhac qui intègre le point de vue chargeur. 
+    % HLRP 
+    L'équipe aborde également les problématiques intégrées de localisation de hubs et routage sous l'angle de leur application aux services postaux \cite{bostel:hal-01320357,yang:hal-02524875} et de la minimisation de l'impact environnemental \cite{yang:these}.
+    
+    \item Plus généralement, l'équipe contribue à la résolution de problématiques de transport pour l'industrie et les service. Pour le transport de personnes à mobilité réduite, de nouveaux algorithmes ont été proposés dans le CPER NOMAd pour l'optimisation de tournées avec véhicules reconfigurables \cite{tellez:hal-01768291} et la construction de plans de transports réguliers \cite{tellez:hal-02460670}.
+    La collecte de déchets a été abordée dans la thèse CIFRE de Quentin Tonneau \cite{tonneau:hal-01621297, tonneau:tel-01729672} en collaboration avec l'entreprise Brangeon. 
+    L'intégration de priorités dans les problèmes de  tournées de véhicules est étudiée dans le cadre de la thèse de Tan Doan en collaboration avec l'université de Hannoï \cite{}. 
+    La conception de réseau de bus est étudiée dans les thèses de Ka Yu Lee \cite{lee:hal-01626949} et Hector Gatt en collaboration avec l'entreprise Lumiplan.
+    Les problèmes d'équilibrage de charge sont étudiés en collaboration avec l'université de Linz \cite{lehuede:hal-02296076}.
 \end{itemize}
 
+En conclusion, dans son activité en transport, l'équipe SLP maintient un équilibre entre un nombre important de projets variés (FUI Végésupply, Thèse 4S-Network, CIFRE Brangeon, deux thèses CIFRE Lumiplan, PHC PROCOPE ATITUDS, PIA ADEME CRC-ON, CPER NOMAD, ANR FILEAS-FOG (inter-axe), ANR OPUSS, CARENE OPT-EMR, Post-Doc UBL, Projet DISC (inter-axe), Atalnstic2020 COLOUR, CIFRE CRC-Services, TSL Cross-regional grant, Mission exploration japon 2019) et un bon niveau de publications. 
+L'axe a de bonnes collaborations internationales (Montréal, Chicago, Shanghai, Mayence, Linz, Tokyo) et nationales (Lyon, Rennes, Angers). 
 
-Activité forte Projets \& animation scientifique
+L'axe est de plus visible à travers l'organisation d'évènements (NOW 2015, VEROLOG 2016, ROADEF 2018, Synchrotrans 2019) et sa participation aux groupes de travail du domaine (Board EWGLA 2015-2019, prix de thèse GT2L 2019, prix de thèse VEROLOG 2020).
 
-Tout en Nb de publis de rang A – + Omega  EJOR TRC COR
-
-X thèses soutenues 1 HDR
-Projets :  
-
-Restant : Végésupply + These 4S CIFRE Brangeon, CIFRE Lumiplan, PHC PROCOPE ATITUDS , PIA ADEME CRC ON, FEDER NOMAD, ANR FILEAS FOG (inter-axe) ; ANR OPUSS ; CARENE OPT-EMR ; Post-Doc UBL; DISC (inter-axe ?); COLOUR; CIFRE CRC Services; CIFRE Lumiplan 2 ; TSL Cross-regional grant ; Mission exploration japon 2019
-
-Collaborations internationales : CIRRELT, Mike Hewitt, Mayence, Linz, Mobilité Fabien, Jiao Tong Un., Hanoï, 
-
-Nationale : Lyon, Rennes, Angers, 
-
-Animation scientifique : VEROLOG 2016, NOW 2015, Synchrotrans 2019, ROADEF 2018, Board EWGLA 2015-2019, GT2L prix de thèse 2019, prix de thèse Verolog 2020. 		
-  		
-  		
-  		
-  \subsubsection{Axe Thèmes transversaux et fondamentaux}
+\subsubsection{Axe Thèmes transversaux et fondamentaux}
   
 L'axe 4 regroupe les travaux de l'équipe avec une coloration plutôt académique portant essentiellement, d'une part, sur l'étude de complexité algorithmique pour des problèmes classiques (ou leurs variantes) en optimisation combinatoire et, d'autre part, sur le développement de méthodes exactes en optimisation multi-objectif.      
 
 \begin{enumerate}
-    \item L’équipe a conduit une étude de complexité algorithmique pour des problèmes d'optimisation combinatoire avec données contrôlables et fonctions de risque linéaires (min-sum) et non-linéaires (min-max). Ses problèmes d’optimisation retrouvent des applications en conception du réseau et routage. Pour tous les problèmes traités, nous avons développé des algorithmes polynomiaux et pseudo-polynomiaux plus efficaces \cite{gurevsky:hal-01262639,gurevsky:hal-01272518,gurevsky:hal-01341259,gurevsky:hal-02504487}, en termes de l'ordre de grandeur, par rapport à ceux proposés auparavant dans la littérature. 
+    \item L’équipe a conduit une étude de complexité algorithmique pour des problèmes d'optimisation combinatoire avec données contrôlables et fonctions de risque linéaires (min-$\sum$) et non-linéaires (min-max). Ses problèmes d’optimisation retrouvent des applications en conception du réseau et routage. Pour tous les problèmes traités, nous avons développé des algorithmes polynomiaux et pseudo-polynomiaux plus efficaces \cite{Gurevsky2015,Gurevsky2016a,Gurevsky2016b,Gurevsky2020}, en termes de l'ordre de grandeur, par rapport à ceux proposés auparavant dans la littérature. 
     
     \item L’activité sur le thème « optimisation multi-objectif » sur la période 2015-2019 a été naturellement rythmée par le projet ANR-DFG vOpt (Exact Efficient Solution of Mixed Integer Programming Problems with Multiple Objective Functions).
 

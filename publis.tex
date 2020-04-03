@@ -1,35 +1,42 @@
 
 \begin{refsection}[equipes/SLP/annexes/SLP.bib]
 
+  \selectauthorsEquipe{SLP}
+  
   \nocite{*}
 
   \section{Journaux / Revues} % 1
-  \printbibliography[heading=paragraph,category=revue]
+  \printbibliography[heading=paragraph,title={Articles dans des revues internationales à comité de lecture},category=revueInter]
+  \printbibliography[heading=paragraph,title={Autres articles dans des revues à comité de lecture},category=revueNat]
+  \printbibliography[heading=paragraph,title={Autres articles},category=revueAutre]
 
   \section{Ouvrages} % 2
-  \printbibliography[heading=paragraph,title={Monographies},category=ouvrage]
   \printbibliography[heading=paragraph,title={Direction et coordination d'ouvrages},category=dirouv]
+  \printbibliography[heading=paragraph,title={Monographies},category=ouvrage]
   \printbibliography[heading=paragraph,title={Chapitres d'ouvrages},category=chapitre]
+  \printbibliography[heading=paragraph,title={Ouvrages de vulgarisation},category=ouvulga]
   \printbibliography[heading=paragraph,title={Thèses et HDR},category=these]
+  
 
   \section{Production dans des colloques} % 3
   \printbibliography[heading=paragraph,title={Édition ou coordination d'un volume d'actes de colloques},category=actes]
-  \printbibliography[heading=paragraph,title={Articles dans des actes de colloques/congrès},category=conf] % An article in a conference proceedings
+  \printbibliography[heading=paragraph,title={Articles dans des actes de colloques/congrès de portée internationale},category=confInter] % An article in a conference proceedings
+  \printbibliography[heading=paragraph,title={Articles dans des actes de colloques/congrès de portée nationale},category=confNat] % An article in a conference proceedings
   \printbibliography[heading=paragraph,title={Autres produits présentés dans des colloques/congrès},category=poster] % A poster in a conference proceedings
 
 
-  \section*{Produits et outils informatiques} % 5
-  \printbibliography[heading=paragraph,category=logiciel]
+  \section{Produits et outils informatiques} % 5
+  \printbibliography[heading=none,category=logiciel]
   
-  \section*{Brevets} % 5
-  \printbibliography[heading=paragraph,category=brevet]
+  \section{Brevets} % 5
+  \printbibliography[heading=none,category=brevet]
 
-  \section*{Rapports d'expertise techniques}
-  \printbibliography[heading=paragraph,type=techreport]
+  \section{Rapports d'expertise techniques}
+  \printbibliography[heading=none,category=rapport]
   
   \section{Autres publications}
-  \printbibliography[heading=paragraph,title={Ouvrages de vulgarisation},category=ouvulga]
-  \printbibliography[heading=paragraph,title=Non classé,category=autre]
+  \printbibliography[heading=none,category=autre]
+
 
 
 \end{refsection}
