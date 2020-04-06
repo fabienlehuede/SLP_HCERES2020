@@ -117,7 +117,7 @@
 	\textcolor{bleu}{Remarque : Evacuer tout de suite la question de savoir si la RO fait partie de l'IA, des sciences des données ou de gestion. Quand on parle de la discipline X, il s'agit de tout ce qui n'est pas RO dans cette discipline}
 	
 	\begin{itemize}
-	    \item \textbf{Intelligence artificielle :} les liens sont forts entre la recherche opérationnelle et plusieurs disciplines relevant de l'intelligence artificielle. En particulier, l'équipe utilise déjà des modules relevant de l'apprentissage dans ses algorithmes d'optimisation des transports (\textcolor{et ailleurs?}. Cette pratique est amenée à se développer dans le futur, notamment dans le développement de méthodes approchées. \textcolor{blue}{quelle utilisation possible du machine learning, d'autres techniques purement IA ? }
+	    \item \textbf{Intelligence artificielle :} les liens sont forts entre la recherche opérationnelle et plusieurs disciplines relevant de l'intelligence artificielle. En particulier, l'équipe utilise déjà des modules relevant de l'apprentissage dans ses algorithmes d'optimisation des transports (\textcolor{blue}{et ailleurs?}. Cette pratique est amenée à se développer dans le futur, notamment dans le développement de méthodes approchées. \textcolor{blue}{quelle utilisation possible du machine learning, d'autres techniques purement IA ? }
 	    
 	    
 	    \item \textbf{Science des données : }
@@ -156,13 +156,13 @@
 		
 \tikzstyle{chapeau} = [rectangle, draw, fill=blue!40, text centered, rounded corners, minimum height=4 em]		
 \tikzstyle{chapeau2} = [rectangle, draw, fill=blue!40, text centered, rounded corners]		
-\tikzstyle{obj} = [rectangle, draw, fill=blue!20, text width=3.5cm, text centered, rounded corners, minimum height=3 em]
+\tikzstyle{obj} = [rectangle, draw, fill=blue!20, text centered, rounded corners, minimum height=3 em]
 \tikzstyle{detail} = [rectangle, draw, fill=plum!20, text width=3.5cm, text centered, rounded corners, minimum height=4 em]
-\tikzstyle{detail1} = [rectangle, draw, fill=red!30, text width=3.5cm, text centered, rounded corners, minimum height=4 em]
-\tikzstyle{detail2} = [rectangle, draw, fill=orange!30, text width=3.5cm, text centered, rounded corners, minimum height=4 em]
-\tikzstyle{detail3} = [rectangle, draw, fill=yellow!30, text width=3.5cm, text centered, rounded corners, minimum height=4 em]
+\tikzstyle{detail1} = [rectangle, draw, fill=red!30,  text centered, rounded corners, minimum height=4 em]
+\tikzstyle{detail2} = [rectangle, draw, fill=orange!30, text centered, rounded corners, minimum height=4 em]
+\tikzstyle{detail3} = [rectangle, draw, fill=yellow!30, text centered, rounded corners, minimum height=4 em]
 \tikzstyle{detail4} = [rectangle, draw, fill=plum!20, text width=2.5cm, text centered, rounded corners, minimum height=4 em]
-\tikzstyle{verrou} = [rectangle, draw, text width=3.5cm, text centered, rounded corners, minimum height=16.5 em]
+\tikzstyle{verrou} = [rectangle, draw, text width=9cm, text centered, rounded corners, minimum height=3em]
 
 \tikzstyle{line} = [draw, very thick, color=black!50, -latex']
 
@@ -172,48 +172,57 @@
 \begin{tikzpicture}[scale=0.5, auto]
 
     %  nodes  
-    \node [chapeau, text width=7.5cm] (RO) at (12,18) {Domaine de recherche: \;\;\;\; recherche opérationnelle}; 
+    \node [chapeau, text width=7cm] (RO) at (12,18) {Domaine de recherche: \;\;\;\; recherche opérationnelle}; 
      \node [chapeau,  text width=8.5cm] (IF) at (29,18) {Toile de fond: industrie du futur};
 
-    \node [obj] (M) at (8,15) {Méthodes};
-    \node [obj] (V) at (16,15) {Verrous scientifiques};
-    \node [obj] (O) at (24,15) {Objectifs de contribution};
-    \node [obj] (D) at (34,-6) {Défis sociétaux};
-    \node [obj] (D) at (34,15) {Domaines d'application};
-     
-   
-    \node[detail1] at (8,12) {Optimisation discrète et mixte};
-    \node[detail1] at (8,9) {Optimisation exacte};
-    \node[detail1] at (8,6) {Méthodes approchées};
-    \node[detail1] at (8,3) {Compléxité};
-    \node[detail2] at (8,-3) {Optimisation robuste};
-    \node[detail2] at (8,-6) {Optimisation stochastique};
-    \node[detail3] at (8,-15) {Modélisation avancée};
-    \node[detail3] at (8,-18) {Optimisation multiobjectif};
+    \node [obj, text width=7cm] (M) at (8,15) {Méthodes};
+    \node [obj, text width=3.5cm] (O) at (24,15) {Objectifs de contribution};
+        
+   %-------------------------------------------------------------
+     \node[verrou, fill=red!50] at (15,12) {Optimisation combinatoire};
+    \node[detail1, text width=7cm] at (8,9) {Optimisation discrète et mixte};
+    \node[detail1, text width=7cm] at (8,6) {Optimisation exacte};
+    \node[detail1, text width=7cm] at (8,3) {Méthodes approchées};
+    \node[detail1, text width=7cm] at (8,0) {Compléxité};
     
-     \node[verrou, fill=red!30] at (16,7.5) {Optimisation combinatoire};
-    \node[verrou, fill = orange!30] at (16,-4.5) {Incertitude et variabilité};
-    \node[verrou, fill=yellow!30] at (16,-16.5) {Modèles Enrichis};
- 
-   \node[detail1] at (24,10.5) {Systèmes intégrés, multi-niveaux};
+      \node[detail1] at (24,10.5) {Systèmes intégrés, multi-niveaux};
    \node[detail1] at (24,7.5) {Problèmes de grande taille};
    \node[detail1] at (24,4.5) {Synchronisation des systèmes};
-    \node[detail2] at (24,0) {Systèmes flexibles, reconfigurables};
-    \node[detail2] at (24,-3) {Résilience et robustesse des systèmes};
-    \node[detail2] at (24,-6) {Réactivité, systèmes dynamiques};
-    \node[detail2] at (24,-9) {Optimisation basée sur les données};
-    \node[detail3] at (24,-12) {Fonctions objectif alternatives};
-    \node[detail3] at (24,-15) {Nouveaux modèles économiques};
-    \node[detail3] at (24,-18) {Homme dans la boucle};
-    \node[detail3] at (24,-21) {Explicabilité de la décision};
-    
-    \node[detail] at (34,12) {Production de biens};
-\node[detail] at (34,8.5) {Production de services};
-\node[detail] at (34,5) {Chaine logistique};
-\node[detail] at (34,1.5) {Transport};
 
-\node[detail] at (34,-9) {Santé du futur};
-\node[detail] at (34,-12.5) {Efficience énergétique};
+    
+    %-----------------------------------------------------------
+   \node[verrou, fill = orange!50] at (16,-4) {Incertitude et variabilité};     
+   \node[detail2, text width=7cm] at (8,-7) {Optimisation robuste};
+    \node[detail2, text width=7cm] at (8,-10) {Optimisation stochastique};
+    
+     \node[detail2] at (24,-7) {Systèmes flexibles, reconfigurables};
+    \node[detail2] at (24,-10) {Résilience et robustesse des systèmes};
+    \node[detail2] at (24,-13) {Réactivité, systèmes dynamiques};
+    \node[detail2] at (24,-16) {Optimisation basée sur les données};
+
+  
+  %---------------------------------------------------------
+     \node[verrou, fill=yellow!50] at (17,-19) {Modèles Enrichis};
+
+    \node[detail3, text width=7cm] at (8,-22) {Modélisation avancée};
+    \node[detail3, text width=7cm] at (8,-25) {Optimisation multiobjectif};
+    
+    \node[detail3] at (24,-22) {Fonctions objectif alternatives};
+    \node[detail3] at (24,-25) {Nouveaux modèles économiques};
+    \node[detail3] at (24,-28) {Homme dans la boucle};
+    \node[detail3] at (24,-31) {Explicabilité de la décision};
+   
+   
+   %----------------------------------------------- 
+   \node [obj, ] (D) at (34,15) {Domaines d'application};
+    \node[detail] at (34,12) {Production de biens};
+    \node[detail] at (34,8.5) {Production de services};
+    \node[detail] at (34,5) {Chaine logistique};
+    \node[detail] at (34,1.5) {Transport};
+
+   \node [obj] (D) at (34,-6) {Défis sociétaux};
+    \node[detail] at (34,-9) {Santé du futur};
+    \node[detail] at (34,-12.5) {Efficience énergétique};
 
      \node [chapeau2, text width=15.5cm] (I) at (20,-23.5){Interfaces};
     \node[detail4] at (7,-26) {Intelligence artificielle};
