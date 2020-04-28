@@ -6,6 +6,26 @@
 % changer à false pour ne pas générer les commentaires dans le pdf 
 \setboolean{comment}{false}  
  
+%\newcommand{\nb}[3]{
+	%{\colorbox{#2}{\bfseries\sffamily\tiny\textcolor{white}{#1}}}
+	%{\textcolor{#2}{\sf\small$\blacktriangleright$\textit{#3}$\blacktriangleleft$}}
+	%}
+	
+\newcommand{\nb}[3]{
+	{{\bfseries\sffamily\tiny\textcolor{#2}{#1}}}
+	{{\color{#2} \sf\small$\blacktriangleright$\textit{#3}$\blacktriangleleft$}}
+	}
+	
+
+\newcommand{\OP}[1]{\nb{\scriptsize OP}{olive}{#1}}
+\newcommand{\FL}[1]{\nb{\scriptsize FL}{blue}{#1}}
+\newcommand{\GM}[1]{\nb{\scriptsize GM}{brown}{#1}}
+%\newcommand{\OP}[1]{\textcolor{olive}{\sf\small$\blacktriangleright$ \textbf{OP:} \textit{#1} $\blacktriangleleft$}}
+%\newcommand{\FL}[1]{\textcolor{blue}{\sf\small$\blacktriangleright$ \textbf{FL:} \textit{#1} $\blacktriangleleft$}}
+ 
+ 
+ 
+ 
 
 \begin{document}
 \sloppy
